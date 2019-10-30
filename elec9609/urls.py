@@ -23,9 +23,11 @@ from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
+#from rest_framework_simplejwt import views as jwt_views
 
 from goods.views import GoodsListViewSet, CategoryViewset
 from users.views import UserViewset
+from user_operation.views import UserFavViewset
 
 router = DefaultRouter()
 
@@ -37,7 +39,7 @@ router.register(r'categorys', CategoryViewset, base_name="category-list")
 
 router.register(r'users', UserViewset, base_name="users")
 
-
+router.register(r'userfavs', UserFavViewset, base_name="userfavs")
 
 from goods.views import GoodsListViewSet
 
@@ -59,4 +61,6 @@ urlpatterns = [
 
     #jwt auth
     re_path(r'^login/', obtain_jwt_token),
+   # path('login/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+   # path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
 ]

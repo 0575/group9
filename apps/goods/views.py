@@ -17,7 +17,7 @@ class GoodsPagination(PageNumberPagination):
     page_query_param = "p"
     max_page_size = 100
 
-class GoodsListViewSet(mixins.ListModelMixin,viewsets.GenericViewSet):
+class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     '''
     goods list page, pagination, search, order, filter
     '''
