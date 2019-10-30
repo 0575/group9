@@ -1,8 +1,7 @@
-
 import contextmenuComponent from './contextmenu'
 //这里是初始值
-const defaults={
-    event:''
+const defaults = {
+  event: ''
 
 }
 
@@ -24,52 +23,52 @@ function merge(target) {
 
 //插件注册
 const contextmenu = {
-  install: function(Vue) {
+  install: function (Vue) {
     var contextmenuConstructor = Vue.extend(contextmenuComponent);
 
-    Vue.prototype.$contextmenu = function(options){
-        //console.log(options)
-        var event =event||window.event;
-        //var data = merge({},defaults,options);
-        var contextmenuVm = new contextmenuConstructor({
-            data(){
-                return {
-                    top:'-500px',
-                    left:'-500px',
-                    items:options,
-                    isShowChildIndex:null
-                };
-            },
-            methods:{
-                removeDom:function(){
-                    var menu = document.getElementById('contextMenu-box');
-                    if(menu){
-                        menu.parentNode.removeChild(menu)
-                    }
-                },
-                rightClick(fn){
-                    fn()//执行事件
-                    //删除dom
-                    this.removeDom()
-                }
+    Vue.prototype.$contextmenu = function (options) {
+      //console.log(options)
+      var event = event || window.event;
+      //var data = merge({},defaults,options);
+      var contextmenuVm = new contextmenuConstructor({
+        data() {
+          return {
+            top: '-500px',
+            left: '-500px',
+            items: options,
+            isShowChildIndex: null
+          };
+        },
+        methods: {
+          removeDom: function () {
+            var menu = document.getElementById('contextMenu-box');
+            if (menu) {
+              menu.parentNode.removeChild(menu)
             }
-        })
-       Vue.nextTick(function(){
-         //将loading组件插入到target元素上
-        document.body.appendChild(contextmenuVm.$mount().$el); 
+          },
+          rightClick(fn) {
+            fn()//执行事件
+            //删除dom
+            this.removeDom()
+          }
+        }
+      })
+      Vue.nextTick(function () {
+        //将loading组件插入到target元素上
+        document.body.appendChild(contextmenuVm.$mount().$el);
         var menu = document.getElementById('contextMenu');
         var left = event.clientX + 5, /* nudge to the right, so the pointer is covering the title */
-            top = event.clientY;
+          top = event.clientY;
         if (top + menu.offsetHeight >= document.body.clientHeight) {
-            top -= menu.offsetHeight;
+          top -= menu.offsetHeight;
         }
         if (left + menu.offsetWidth >= document.body.clientWidth) {
-            left -= menu.offsetWidth;
+          left -= menu.offsetWidth;
         }
-        menu.style.zIndex=1000001;
-        menu.style.left=left+'px';
-        menu.style.top=top+'px';
-       })
+        menu.style.zIndex = 1000001;
+        menu.style.left = left + 'px';
+        menu.style.top = top + 'px';
+      })
       return contextmenuVm;
     }
   }

@@ -6,10 +6,10 @@ export const isArray = (arr) => {
 export const isPlain = (obj) => {
   let hasOwnProperty = Object.prototype.hasOwnProperty;
   let key;
-    // 一般的情况，直接用toString判断
-    // IE下，window/document/document.body/HTMLElement/HTMLCollection/NodeList等DOM对象上一个语句为true
-    // isPrototypeOf挂在Object.prototype上的，因此所有的字面量都应该会有这个属性
-    // 对于在window上挂了isPrototypeOf属性的情况，直接忽略不考虑
+  // 一般的情况，直接用toString判断
+  // IE下，window/document/document.body/HTMLElement/HTMLCollection/NodeList等DOM对象上一个语句为true
+  // isPrototypeOf挂在Object.prototype上的，因此所有的字面量都应该会有这个属性
+  // 对于在window上挂了isPrototypeOf属性的情况，直接忽略不考虑
   if (!obj || Object.prototype.toString.call(obj) !== '[object Object]' || !('isPrototypeOf' in obj)) {
     return false;
   }
@@ -22,10 +22,10 @@ export const isPlain = (obj) => {
   // 判断有继承的情况
   // 如果有一项是继承过来的，那么一定不是字面量Object
   // OwnProperty会首先被遍历，为了加速遍历过程，直接看最后一项
-  for (key in obj) {}
+  for (key in obj) {
+  }
   return key === undefined || hasOwnProperty.call(obj, key);
 };
-
 
 
 export const cloneObject = (src) => {

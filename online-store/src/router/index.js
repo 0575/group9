@@ -1,30 +1,14 @@
 //引入vue
 import Vue from 'vue'
 //获取参数
-import  getQueryString from './getQueryString';
 //引入路由组件
 import Router from 'vue-router';
 
 import cookie from '../static/js/cookie';
-
-//注册路由
-Vue.use(Router);
-//引入路由需要的组件
-
-
 //公共部分
 import app from '../views/app/app';
-
 //全局状态控制引入
 import store from '../store/store'
-
-//异步加载首页
-// var home = function(resolve) {
-//   require.ensure(['../views/home/home'], () => {
-//     resolve(require('../views/home/home'))
-//   }, 'home')
-// };
-
 import home from '../views/home/home'
 import head from '../views/head/head'
 import footer from '../views/footer/footer'
@@ -44,6 +28,16 @@ import collection from '../views/member/collection'
 import userinfo from '../views/member/userinfo'
 import register from '../views/register/register'
 
+//注册路由
+Vue.use(Router);
+//引入路由需要的组件
+
+//异步加载首页
+// var home = function(resolve) {
+//   require.ensure(['../views/home/home'], () => {
+//     resolve(require('../views/home/home'))
+//   }, 'home')
+// };
 
 
 // var head = function(resolve) {
@@ -317,36 +311,36 @@ var router = new Router({
 router.beforeEach((to, from, next) => {
   var nextPath = cookie.getCookie('nextPath')
   console.log(nextPath)
-  if(nextPath=="pay"){
+  if (nextPath == "pay") {
     next({
       path: '/app/home/member/order',
     });
-  }else{
-    if(to!=undefined){
-      if(to.meta.need_log){
+  } else {
+    if (to != undefined) {
+      if (to.meta.need_log) {
         console.log(to.meta.need_log)
-        if(!store.state.userInfo.token){
+        if (!store.state.userInfo.token) {
           next({
             path: '/app/login',
           });
-        }else {
+        } else {
           next();
         }
-      }else {
+      } else {
         if (to.path === '/') {
           next({
             path: '/app/home/index',
           });
-        }else {
+        } else {
           next();
         }
       }
-    }else {
+    } else {
       if (to.path === '/') {
         next({
           path: '/app/home/index',
         });
-      }else {
+      } else {
         next();
       }
     }

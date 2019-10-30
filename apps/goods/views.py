@@ -32,7 +32,7 @@ class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewset
 
 class CategoryViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     '''
-    List:
+    list:
         goods category list data
     '''
     queryset = GoodsCategory.objects.filter(category_type=1)
