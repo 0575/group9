@@ -1,41 +1,30 @@
-//这个是全局文件
+//global file
 
-import mock from '../mock/mock.js'
-
-//全局引入jq
-import $ from 'jquery';
-//全局引入vue
+//global vue
 import Vue from 'vue';
-
-
-//全局引入共用css
+//global css
 import './styles/common.scss';
-//引入字体样式
+//global font style
 import './styles/fonts/iconfont.css';
-//全局引入路由配置
+//global router
 import router from './router';
-
-
-//全局状态控制引入
+//global state control
 import store from './store/store';
-
-
-//全局加载resource拦截器
+//global resource interceptor
 import './axios/';
 import Axios from 'axios';
+import App from './App';
+
 Vue.prototype.$http = Axios
 
 
-//引入需要渲染的视图组件
-import App from './App';
-
-//创建全局实例
+//create a global instance
 new Vue({
-    el:'#app',
-    router,
-    store,
-    template:'<App/>',
-    components:{App}
+  el: '#app',
+  router,
+  store,
+  template: '<App/>',
+  components: {App}
 })
 
 

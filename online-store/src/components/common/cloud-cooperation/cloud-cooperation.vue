@@ -1,22 +1,22 @@
 <template>
-    <div class="associate-file">
-        <Modal v-model="modalShow" title="云协作" @on-ok="ok" @on-cancel="cancel">
-            <div class="wrap">
-                
-            </div>
-            
-            
-        </Modal>
+  <div class="associate-file">
+    <Modal v-model="modalShow" title="云协作" @on-ok="ok" @on-cancel="cancel">
+      <div class="wrap">
 
-    </div>
+      </div>
+
+
+    </Modal>
+
+  </div>
 </template>
 <script>
 
     export default {
-        data () {
+        data() {
             return {
                 modalShow: false,
-                
+
 
             };
         },
@@ -25,23 +25,19 @@
                 type: Boolean,
                 default: false
             },
-            
+
         },
-        created () {
-            
+        created() {
+
         },
         watch: {
-            value (val) {
-                
+            value(val) {
+
                 this.modalShow = val;
             }
         },
-        computed: {
-
-        },
-        methods: {
-            
-        }
+        computed: {},
+        methods: {}
     }
 </script>
 <style scoped lang='scss'>

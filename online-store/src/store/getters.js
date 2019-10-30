@@ -3,7 +3,7 @@
 // 	return state.userInfo.nav;
 // }
 export const userInfo = state => {
-	return state.userInfo;
+  return state.userInfo;
 }
 
 export const goods_list = state => {

@@ -6,30 +6,30 @@ import Vuex from 'vuex';
 import mutations from './mutations';
 import * as actions from './actions';
 import * as getters from './getters';
-
-//全局注册vueX
-Vue.use(Vuex);
 //全局引用cookie方法类
 import cookie from '../static/js/cookie';
 
-const userInfo = {
-            name:cookie.getCookie('name')||'',
-            token:cookie.getCookie('token')||''
-        };
-const goods_list =  {
-       totalPrice:'',
-        goods_list:[]
+//全局注册vueX
+Vue.use(Vuex);
 
-    }
+const userInfo = {
+  name: cookie.getCookie('name') || '',
+  token: cookie.getCookie('token') || ''
+};
+const goods_list = {
+  totalPrice: '',
+  goods_list: []
+
+}
 const state = {
-    userInfo,
-    goods_list
+  userInfo,
+  goods_list
 }
 export default new Vuex.Store({
-	state,
-	mutations,
-	actions,
-	getters
+  state,
+  mutations,
+  actions,
+  getters
 });
 
 
@@ -39,7 +39,7 @@ export default new Vuex.Store({
 //   },
 //   mutations: {
 //     setAuthority(){
-//         state.authority = JSON.parse(cookie.getCookie('authority')); 
+//         state.authority = JSON.parse(cookie.getCookie('authority'));
 //     }
 
 //   }

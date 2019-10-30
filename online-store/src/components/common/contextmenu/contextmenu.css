@@ -1,9 +1,10 @@
-#contextmenu{
-    width:140px;
-    background:#fff;
-    border-radius: 3px;
+#contextmenu {
+  width: 140px;
+  background: #fff;
+  border-radius: 3px;
 }
-#contextmenu li{
-    height:30px;
-    line-height: 30px;
+
+#contextmenu li {
+  height: 30px;
+  line-height: 30px;
 }
