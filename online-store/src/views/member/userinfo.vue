@@ -40,7 +40,7 @@
                 <tr>
                   <td width="28%" align="right" bgcolor="#FFFFFF" id="extend_field5i">Mobile：</td>
                   <td width="72%" align="left" bgcolor="#FFFFFF">
-                    <input disabled name="extend_field5" type="text" class="inputBg" v-model="userInfo.mobile"><span
+                    <input  name="mobile" type="text" class="inputBg" v-model="userInfo.mobile"><span
                     style="color:#FF0000"> *</span>
                   </td>
                 </tr>
