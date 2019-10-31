@@ -27,6 +27,8 @@ axios.interceptors.response.use(
         console.log('Not logged in or token expired');
       case 403:
         console.log('You do not have permission');
+      case 404:
+        console.log('This webpage is not found');
       case 500:
         console.log('Server Error');
     }
