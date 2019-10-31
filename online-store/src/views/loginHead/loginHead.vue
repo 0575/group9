@@ -4,7 +4,9 @@
       <div class="hd_bar" id="userinfo-bar">
         <div class="bd">
           <div class="logo">
-            <router-link :to="'/app/home/index'">Neptune</router-link>
+            <router-link :to="'/app/home/index'"><img src="../../static/images/loginHead/flow_logo.jpg" alt="Logo"
+                                                      max-width="20%" max-height="100" width="auto"
+                                                      height="50"></router-link>
           </div>
           <div class="hd_lbar" style="display: block;" id="ECS_MEMBERZONE">
             <router-link :to="'/app/home/index'"> Home</router-link>
@@ -25,7 +27,7 @@
   }
 
   #header .hd_bar {
-    background-color: #222;
+    background-color: #FDDEE3;
     height: 57px
   }
 
@@ -33,15 +35,6 @@
     position: absolute;
     top: 0;
     left: 0
-  }
-
-  #header .logo a {
-    display: block;
-    width: 182px;
-    height: 0;
-    padding-top: 68px;
-    overflow: hidden;
-    background: #09c762 url(../../static/images/loginHead/flow_logo.png) center 0 no-repeat
   }
 
   .hd_bar .bd {
@@ -67,8 +60,9 @@
     line-height: 17px;
     color: #eee;
     padding: 20px 12px;
-    background-color: #222;
-    vertical-align: top
+    background-color: #FDDEE3;
+    vertical-align: top;
+    color: #000;
   }
 
   .hd_bar .hd_lbar a:hover {

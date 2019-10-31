@@ -124,12 +124,12 @@
 
   .slidebar li a:hover, .slidebar li a.on {
     background-color: #f1f1f1;
-    color: #09c762;
+    color: #4C1F59;
     text-decoration: none
   }
 
   .slidebar li a:hover i, .slidebar li a.on i {
-    color: #09c762;
+    color: #4C1F59;
     -webkit-animation: pop_ico .5s
   }
 

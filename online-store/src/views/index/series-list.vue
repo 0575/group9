@@ -137,7 +137,7 @@
 
   a {
     text-decoration: none;
-    color: #333;
+    color: #4C1F59;
     -webkit-transition: color .2s;
     -moz-transition: color .2s;
     -o-transition: color .2s;
@@ -146,7 +146,7 @@
   }
 
   a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   a:focus, area:focus {
@@ -154,7 +154,7 @@
   }
 
   ::selection {
-    background: #09c762;
+    background: #4C1F59;
     color: #fff
   }
 
@@ -163,7 +163,7 @@
   }
 
   .red, a.red, a.red:hover, .pink, a.pink, a.pink:hover {
-    color: #09c762;
+    color: #4C1F59;
   }
 
   .gray999, .gray, a.gray, a.gray:hover {
@@ -243,7 +243,7 @@
   }
 
   .series_list .pro_list li .price {
-    color: #09c762;
+    color: #4C1F59;
     font-size: 14px
   }
 
@@ -325,7 +325,7 @@
   }
 
   .series_info .name_hufu {
-    background-color: #09c762
+    background-color: #4C1F59
   }
 
   .series_info .name_caizhuang {
@@ -337,6 +337,6 @@
   }
 
   .series_info .name_gongju {
-    background-color: #09c762
+    background-color: #4C1F59
   }
 </style>

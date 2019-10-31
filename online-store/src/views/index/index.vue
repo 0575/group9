@@ -85,7 +85,7 @@
   }
 
   a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   a:focus, area:focus {
@@ -93,7 +93,7 @@
   }
 
   ::selection {
-    background: #09c762;
+    background: #4C1F59;
     color: #fff
   }
 
@@ -102,7 +102,7 @@
   }
 
   .red, a.red, a.red:hover, .pink, a.pink, a.pink:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .gray999, .gray, a.gray, a.gray:hover {

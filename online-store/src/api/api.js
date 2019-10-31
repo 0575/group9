@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 
-//let host = 'http://shop.projectsedu.com';
-let host = '127.0.0.1:8000';
+let host = 'http://127.0.0.1:8000';
 
 //product category information
 export const queryCategorygoods = params => {

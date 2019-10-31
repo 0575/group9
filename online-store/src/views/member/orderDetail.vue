@@ -19,7 +19,7 @@
                   style="text-align:center"><a :href="orderInfo.alipay_url"><input type="button" onclick=""
                                                                                    value="Pay now with Alipay"></a></div>
                 </td>
-                <td v-if="orderInfo.pay_status == 'TRADE_SUCCESS' " align="left" bgcolor="#ffffff">已支付</td>
+                <td v-if="orderInfo.pay_status == 'TRADE_SUCCESS' " align="left" bgcolor="#ffffff">Paid</td>
               </tr>
               </tbody>
             </table>

@@ -20,7 +20,7 @@
                     {{item.goods.name}}
                   </router-link>
                 </td>
-                <td bgcolor="#ffffff">Price<span class="goods-price">${{item.goods.shop_price}}</span>
+                <td bgcolor="#ffffff">Price <span class="goods-price">${{item.goods.shop_price}}</span>
                 </td>
                 <td align="center" bgcolor="#ffffff">
                   <a class="f6" @click="deletePro(index, item.goods.id)">Delete</a>
@@ -97,13 +97,15 @@
 
             },
             deletePro(index, id) {
-                alert('Are you sure you want to remove the selected item from your favorites?');
-                delFav(id).then((response) => {
-                    this.collections.splice(index, 1);
-                    alert('Item removed');
-                }).catch(function (error) {
-                    console.log(error);
-                });
+                if (confirm('Are you sure you want to remove the selected item from your favorites?')){
+                    delFav(id).then((response) => {
+                        this.collections.splice(index, 1);
+                        alert('Item removed');
+                    }).catch(function (error) {
+                        console.log(error);
+                    });
+                }else{
+                }
             }
         }
     }
@@ -142,7 +144,7 @@
   }
 
   .my_nala_centre .trade_mod .h301 a.more:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .something_interesting {
@@ -166,7 +168,7 @@
   .my_nala_centre .something_interesting em {
     font-size: 12px;
     font-weight: bold;
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .relate_goods {

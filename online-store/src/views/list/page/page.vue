@@ -86,8 +86,8 @@
     cursor: pointer;
 
     &:hover {
-      color: #09c762;
-      border-color: #09c762;
+      color: #4C1F59;
+      border-color: #4C1F59;
 
     }
   }

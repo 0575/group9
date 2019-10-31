@@ -41,7 +41,7 @@
                   <td width="28%" align="right" bgcolor="#FFFFFF" id="extend_field5i">Mobile：</td>
                   <td width="72%" align="left" bgcolor="#FFFFFF">
                     <input  name="mobile" type="text" class="inputBg" v-model="userInfo.mobile"><span
-                    style="color:#FF0000"> *</span>
+                    style="color:#e09bb7"> *</span>
                   </td>
                 </tr>
                 <tr>
@@ -116,7 +116,7 @@
   }
 
   .my_nala_centre .trade_mod .h301 a.more:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .something_interesting {
@@ -140,7 +140,7 @@
   .my_nala_centre .something_interesting em {
     font-size: 12px;
     font-weight: bold;
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .relate_goods {
@@ -208,11 +208,11 @@
     height: 24px;
     line-height: 25px;
     _line-height: 18px;
-    border: 1px solid #1e9246;
+    border: 1px solid #4C1F59;
     border-radius: 3px;
     font-size: 100%;
     color: #fff;
-    background-color: #09c762;
+    background-color: #4C1F59;
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer;

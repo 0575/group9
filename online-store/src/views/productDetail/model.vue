@@ -10,7 +10,7 @@
     padding: 40px 0;
     text-align: center;
     width: 480px;
-    border: 3px solid #09c762;
+    border: 3px solid #4C1F59;
     border-radius: 10px;
     -moz-border-radius: 10px;
   }
@@ -22,13 +22,13 @@
 
   .add_ok .tip i {
     font-size: 60px;
-    color: #6dc415;
+    color: #4C1F59;
     vertical-align: -4px;
     margin-right: 15px;
   }
 
   .add_ok .go a.back {
-    color: #09c762;
+    color: #4C1F59;
     margin-right: 90px;
   }
 

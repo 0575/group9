@@ -21,6 +21,7 @@ axios.interceptors.response.use(
   undefined,
   error => {
     let res = error.response;
+    console.log(error);
     switch (res.status) {
       case 401:
         console.log('Not logged in or token expired');

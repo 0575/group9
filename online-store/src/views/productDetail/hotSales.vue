@@ -123,7 +123,7 @@
   }
 
   a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   a:focus, area:focus {
@@ -131,7 +131,7 @@
   }
 
   ::selection {
-    background: #09c762;
+    background: #4C1F59;
     color: #fff
   }
 
@@ -171,7 +171,7 @@
   }
 
   p.hot_price {
-    color: #09c762;
+    color: #4C1F59;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;

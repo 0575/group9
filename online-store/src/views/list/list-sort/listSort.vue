@@ -3,7 +3,7 @@
     <div class="bd">
       <form name="listform">
         <a title="Sales" class="curr" rel="nofollow" @click="sortType('-sold_num')"><span
-          :class="{search_DESC: cur==='-sold_num'}">Sales</span></a>
+          :class="{search_DESC: cur==='-sold_num'}">Most Popular</span></a>
         <a title="Price" class="curr" rel="nofollow" @click="sortType('-shop_price')"><span
           :class="{search_DESC: cur==='-shop_price'}">Price</span></a>
       </form>
@@ -104,7 +104,7 @@
   }
 
   a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   a:focus, area:focus {
@@ -112,7 +112,7 @@
   }
 
   ::selection {
-    background: #09c762;
+    background: #4C1F59;
     color: #fff
   }
 
@@ -161,7 +161,7 @@
     padding: 4px 26px 4px 15px;
     background-position: right -104px;
   + background-position: right - 102 px;
-    color: #09c762;
+    color: #4C1F59;
     text-shadow: 1px 1px 1px #fff
   }
 
@@ -170,7 +170,7 @@
     padding: 4px 26px 4px 15px;
     background-position: right -330px;
   + background-position: right - 328 px;
-    color: #09c762;
+    color: #4C1F59;
     text-shadow: 1px 1px 1px #fff
   }
 
@@ -204,7 +204,7 @@
   }
 
   .search_num b {
-    color: #09c762
+    color: #4C1F59
   }
 
   .search_num span.search_btn {
@@ -228,7 +228,7 @@
     border-color: #ccc;
     box-shadow: 0 1px 1px #eee;
     text-decoration: none;
-    color: #09c762
+    color: #4C1F59
   }
 
   .search_num span.search_btn span {
@@ -236,7 +236,7 @@
   }
 
   .search_num span.search_btn span em {
-    color: #09c762
+    color: #4C1F59
   }
 
 
