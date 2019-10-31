@@ -25,7 +25,7 @@ from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
 #from rest_framework_simplejwt import views as jwt_views
 
-from goods.views import GoodsListViewSet, CategoryViewset
+from goods.views import GoodsListViewSet, CategoryViewset, BannerViewset, IndexCategoryViewset
 from users.views import UserViewset
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from trade.views import ShoppingCartViewset, OrderViewset
@@ -53,6 +53,13 @@ router.register(r'shopcarts', ShoppingCartViewset, base_name="shopcarts")
 
 #orders
 router.register(r'orders', OrderViewset, base_name="orders")
+
+#banner
+router.register(r'banners', BannerViewset, base_name="banners")
+
+#homepagecategory
+router.register(r'indexgoods', IndexCategoryViewset, base_name="indexgoods")
+
 
 
 

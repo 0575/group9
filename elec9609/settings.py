@@ -161,8 +161,21 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
-    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.AutoSchema'
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.AutoSchema',
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    # 'DEFAULT_THROTTLE_RATES': {
+    #     'anon': '100/minute',
+    #     'user': '100/minute'
+    # }
 }
+
+REST_FRAMEWORK_EXTENSIONS = {
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60
+}
+
 
 import datetime
 JWT_AUTH = {

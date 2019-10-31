@@ -8,7 +8,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_jwt.serializers import jwt_encode_handler, jwt_payload_handler
 from rest_framework import mixins
-from rest_framework import  permissions
+from rest_framework import permissions
 from rest_framework import authentication
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
@@ -42,6 +42,9 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
 
     def get_object(self):
         return self.request.user
+
+    def perform_create(self, serializer):
+        return serializer.save()
 
     # def create(self, request, *args, **kwargs):
     #     serializer = self.get_serializer(data=request.data)
