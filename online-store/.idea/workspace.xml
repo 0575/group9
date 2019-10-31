@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4eef0764-427b-4eeb-a9ce-1a5eafb6d49c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/static/images/new/new.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/elec9609.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/elec9609.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apps/goods/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/../apps/goods/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apps/user_operation/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/../apps/user_operation/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/mock/banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/mock/hotSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/mock/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/mock/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/mock/newOpro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/mock/seriesList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/associateFile/associateFile.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/cloud-cooperation/cloud-cooperation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/contextmenu/contextmenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/contextmenu/contextmenu.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/contextmenu/contextmenu2.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/contextmenu/eachContextmenuDom.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/contextmenu/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/control/control-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/current-loc/current-loc.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/drag/drag.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/layout/layout.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/list-nav/listNav.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/list-sort/images/search-page-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/list-sort/listSort.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/loading/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/loading/loading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/loading2/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/loading2/loading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/menu/menu-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/nodata/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/nodata/nodata.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/page/page.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/price-range/images/search-page-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/price-range/priceRange.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/10_thumb_G_1448944572962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/11_thumb_G_1448944388914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/1460440720430642585.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/1_thumb_G_1449024889033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/2_thumb_G_1448945810147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/3_thumb_G_1448945490826.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/47_thumb_G_1448946213633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/4_thumb_G_1448945381841.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/6_thumb_G_1448945167914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/7_thumb_G_1448945104346.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/8_thumb_G_1448945032585.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/9_thumb_G_1448944791708.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/ft-svr1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/ft-svr2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/ft-svr3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/ft-svr4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/gotop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/kefuweixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/nextpage-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/wangwang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/images/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/product-list/productList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/result-list/result-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/tag/tag-filter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/heighchart/bar/line-bar/line_bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/heighchart/circle/circle/circle.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/head/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/head/logo2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/head/webintro-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/indexNew/1460440788951670189.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/indexNew/1_thumb_G_1449024889033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/indexNew/49_thumb_G_1448162819357.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/loginBg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/login/loginBg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/login/other-login-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/loginHead/flow_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/new/xinpin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/register/loginBg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/images/register/loginBg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/10_thumb_G_1448944572962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/11_thumb_G_1448944388914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1447704649936189900.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1447704682791039878.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1447705943471297107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1447706000795527048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1447706093179659152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1447706126626614178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1447706160927101013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1447706206565420819.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1449010433801562396.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1449010763793377576.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1449011954874068927.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/1449012797850565666.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/21_thumb_G_1448946793103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/22_thumb_G_1448946729918.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/24_thumb_G_1448948023508.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/25_thumb_G_1448947875633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/26_thumb_G_1448947825794.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/27_thumb_G_1448947771206.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/28_thumb_G_1448947699187.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/29_thumb_G_1448947631664.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/31_thumb_G_1448948598408.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/32_thumb_G_1448948525255.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/33_thumb_G_1448948479944.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/34_thumb_G_1448948399017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/35_thumb_G_1448948333567.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/36_thumb_G_1448948234706.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/45_thumb_G_1448946661697.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/46_thumb_G_1448946598227.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/47_thumb_G_1448946213633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/48_thumb_G_1448943988607.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/50_thumb_G_1448946542088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/51_thumb_G_1448946466261.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/53_thumb_G_1495068879139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/seriesList/9_thumb_G_1448944791708.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/shopHead/flow_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/shopHead/kong.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/shopHead/webintro-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/js/cloneObject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/js/cloneObject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/js/cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/js/cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/mutation-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/mutation-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/confing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/confing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/app/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/cart/cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/cart/cart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/footer/footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/footer/footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/head/head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/head/head.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/head/shophead.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/head/shophead.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index/new.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index/new.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index/series-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index/series-list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/list/current-loc/current-loc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/list/current-loc/current-loc.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/list/list-nav/listNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/list/list-nav/listNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/list/list-sort/listSort.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/list/list-sort/listSort.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/list/page/page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/list/page/page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/list/price-range/priceRange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/list/price-range/priceRange.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/list/product-list/productList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/list/product-list/productList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/login/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/loginHead/loginHead.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/loginHead/loginHead.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/member/collection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/member/collection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/member/member-menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/member/member-menu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/member/message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/member/message.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/member/order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/member/order.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/member/orderDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/member/orderDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/member/receive.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/member/receive.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/member/userinfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/member/userinfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/productDetail/current-loc/current-loc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/productDetail/current-loc/current-loc.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/productDetail/hotSales.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/productDetail/hotSales.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/productDetail/model.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/productDetail/model.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/productDetail/productDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/productDetail/productDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/register/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/register/register.vue" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1SrGArRKTGjMcC5Xj2yYnE3aLUq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4eef0764-427b-4eeb-a9ce-1a5eafb6d49c" name="Default Changelist" comment="" />
+      <created>1572314160887</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572314160887</updated>
+      <workItem from="1572314162809" duration="12815000" />
+      <workItem from="1572400485499" duration="30881000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
