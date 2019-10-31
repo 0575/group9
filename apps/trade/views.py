@@ -26,6 +26,27 @@ class ShoppingCartViewset(viewsets.ModelViewSet):
     serializer_class = ShopCartSerializer
     lookup_field = "goods_id"
 
+    def perform_create(self, serializer):
+        shop_cart = serializer.save()
+        goods = shop_cart.goods
+        goods.goods_num -= shop_cart.nums
+        goods.save()
+
+    def perform_destroy(self, instance):
+        goods = instance.goods
+        goods.goods_num += instance.nums
+        goods.save()
+        instance.delete()
+
+    def perform_update(self, serializer):
+        existed_record = ShoppingCart.objects.get(id=serializer.instance.id)
+        existed_nums = existed_record.nums
+        saved_record = serializer.save()
+        nums = saved_record.nums - existed_nums
+        goods = saved_record.goods
+        goods.goods_num -= nums
+        goods.save()
+
     def get_serializer_class(self):
         if self.action == "list":
             return ShopCartDetailSerializer
@@ -74,3 +95,12 @@ class OrderViewset(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.Retrie
             shop_carts.delete()
         return order
 
+# class PayViewset(mixins.UpdateModelMixin):
+#     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
+#     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+#     serializer_class = OrderSerializer
+#
+#     def perform_update(self, serializer):
+#         order = serializer.save()
+#         order_pay_status = "TRADE_SUCCESS"
+#         return order

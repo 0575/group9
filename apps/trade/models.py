@@ -37,8 +37,6 @@ class OrderInfo(models.Model):
     ORDER_STATUS = (
         ("TRADE_SUCCESS", "TRADE_SUCCESS"),
         ("TRADE_CLOSED", "TRADE_CLOSED"),
-        ("WAIT_BUYER_PAY", "WAIT_BUYER_PAY"),
-        ("TRADE_FINISHED", "TRADE_FINISHED"),
         ("PAYING", "PAYING"),
     )
 

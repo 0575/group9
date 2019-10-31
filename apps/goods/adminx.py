@@ -61,6 +61,7 @@ class IndexAdAdmin(object):
     list_display = ["category", "goods"]
 
 
+
 xadmin.site.register(Goods, GoodsAdmin)
 xadmin.site.register(GoodsCategory, GoodsCategoryAdmin)
 xadmin.site.register(Banner, BannerGoodsAdmin)
