@@ -25,7 +25,7 @@ $ python manage.py runserver
 
 - **Django**: Back-end framework using Django 2.2.
 - **MySQL**: Store data using mysql database.
-- **Vue**: Front-end framework.
+- **Vue+Node	JS**: Front-end framework.
 - **Django Restful framework**: Provide restful API.
 - **UX and UI**: Designed for a user experience that rivals even the top commercial platforms.
 - **Xadmin**: Administrators have total control of users, processes, and products.
