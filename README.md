@@ -9,6 +9,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/language-Python3.7+-blue.svg">
   <img src="https://img.shields.io/badge/FrameWork-Django.2.2-green.svg">
+  <img src="https://img.shields.io/badge/FrameWork-Nodejs.v10.16.0-rgb(52, 235, 171).svg">
 </p>
 
 
