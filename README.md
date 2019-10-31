@@ -20,3 +20,15 @@ $ cd Group-9
 $ pip install -r req_shop.txt
 $ python manage.py runserver
 ```
+
+## Features & Tech stack
+
+- **Django**: Back-end framework using Django 2.2.
+- **MySQL**: Store data using mysql database.
+- **Django Restful framework**: Provide restful API.
+- **UX and UI**: Designed for a user experience that rivals even the top commercial platforms.
+- **Xadmin**: Administrators have total control of users, processes, and products.
+- **Third party payment**: Support Paypal payment.
+- **Cart**: Advanced payment and tax options, with full control over discounts and promotions.
+- **Payments**: Flexible API architecture allows integration of any payment method. 
+- **Cloud**: Can be deployed on AWS
