@@ -7,7 +7,7 @@
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/language-Python3.7+-blue.svg">
-  <img src="https://img.shields.io/badge/FrameWork-Django.2.2-green.svg">
+  <img src="https://img.shields.io/badge/FrameWork-Django.1.1-green.svg">
 </p>
 
 
