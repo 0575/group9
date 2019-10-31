@@ -49,7 +49,7 @@
   }
 
   a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   a:focus, area:focus {

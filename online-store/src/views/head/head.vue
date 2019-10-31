@@ -4,10 +4,10 @@
       <div class="bd_bar_bd cle">
         <ul class="welcome">
           <li id="ECS_MEMBERZONE" v-if="userInfo.name">
-            <router-link :to="'/app/home/member/userinfo'">{{userInfo.name}}</router-link>
-            &nbsp;[
-            <a @click="loginOut">退出</a>
-            ]
+            <router-link :to="'/app/home/member/userinfo'">Hello! {{userInfo.name}}</router-link>
+            &nbsp;
+            <s>|</s><a @click="loginOut">Log out</a>
+
           </li>
           <li id="ECS_MEMBERZONE" v-else>
             <router-link :to="'/app/login'">Login</router-link>
@@ -33,7 +33,8 @@
     <div class="hd_main cle">
       <div class="logo">
         <router-link to="/app/home/index" class="main_logo">
-          <img src="../../static/images/head/logo.gif" alt="Logo">
+          <img src="../../static/images/head/logo2.png" alt="Logo" max-width="20%" max-height="300" width="auto"
+               height="100">
         </router-link>
 
       </div>
@@ -119,10 +120,10 @@
                     </router-link>
                   </h4>
                   <p><span class="red">{{item.goods.shop_price}}</span>&nbsp;<i>X</i>&nbsp;{{item.nums}}</p>
-                  <a title="删除" class="iconfont del" @click="deleteGoods(index,item.goods.id)">×</a></dd>
+                  </dd>
               </dl>
             </div>
-            <div class="count"><span class="red" id="hd_cart_count">{{goods_list.length}}</span>Items
+            <div class="count"><span class="red" id="hd_cart_count">{{goods_list.goods_list.length}}</span>Items
               <p>Total Price:<span class="red"><em id="hd_cart_total">{{goods_list.totalPrice}}</em></span>
                 <router-link class="btn" :to="'/app/shoppingcart/cart'" target=_blank>Check Out
                 </router-link>
@@ -264,7 +265,7 @@
 
   a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     -webkit-transition: color .2s;
     -moz-transition: color .2s;
     -o-transition: color .2s;
@@ -273,7 +274,7 @@
   }
 
   a:hover {
-    color: #09c762
+    color: #e09bb7;
   }
 
   a:focus, area:focus {
@@ -306,11 +307,11 @@
   }
 
   .new_header .hd_cart .tit {
-    border-color: #1e9246
+    border-color: #4C1F59
   }
 
   .new_header .hd_cart .tit span {
-    background-color: #1e9246
+    background-color: #4C1F59
   }
 
   .hd_cart .tit b {
@@ -328,7 +329,7 @@
     width: 34px;
     height: 28px;
     padding-top: 7px;
-    background-color: #09c762;
+    background-color: #4C1F59;
     text-align: center;
     font-size: 12px;
     color: #fff;
@@ -355,7 +356,7 @@
     color: #fff;
     border: 2px solid #fff;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    background-color: #09c762;
+    background-color: #4C1F59;
     border-radius: 10px;
     padding: 0 5px;
     line-height: 16px;
@@ -399,7 +400,7 @@
     top: 14px;
     width: 460px;
     height: 32px;
-    border-color: #09c762
+    border-color: #e09bb7;
   }
 
   #header.new_header .search_box .sea_input {
@@ -408,7 +409,7 @@
   }
 
   #header.new_header .search_box .sea_submit {
-    background-color: #09c762;
+    background-color: #e09bb7;
     width: 80px;
     height: 32px
   }
@@ -417,9 +418,9 @@
   .hd_bar {
     height: 34px;
     border-bottom: 1px solid #e5e5e5;
-    background-color: #f5f5f5;
+    background-color: #4C1F59;
     position: relative;
-    z-index: 2002
+    z-index: 2002;
   }
 
 
@@ -529,32 +530,8 @@
     visibility: visible !important;
   }
 
-  /*.hd_bar .more-bd .list {*/
-  /*width:94px;*/
-  /*border:1px solid #ddd;*/
-  /*background:#fff*/
-  /*}*/
-  /*.hd_bar .more-bd .hezuo_list {*/
-  /*width:72px*/
-  /*}*/
-  /*.hd_bar .more-bd .list a {*/
-  /*display:block;*/
-  /*background-color:#fff;*/
-  /*border-bottom:1px dashed #d7d7d7;*/
-  /*padding:6px 10px;*/
-  /*height:17px;*/
-  /*overflow:hidden*/
-  /*}*/
-  /*.hd_bar .more-bd .list a:hover {*/
-  /*background:#f8f8f8;*/
-  /*color:#333;*/
-  /*text-decoration:none*/
-  /*}*/
-  /*.hd_bar .more-bd .list a.last {*/
-  /*border-bottom:0*/
-  /*}*/
   .hd_bar li.hover a.menu-link {
-    color: #09c762
+    color: #4C1F59
   }
 
   .hd_bar li.hover i.arrow {
@@ -599,7 +576,7 @@
     top: 0;
     width: 300px;
     height: 29px;
-    border: 2px solid #1e9246;
+    border: 2px solid #4C1F59;
     border-right: 0;
     background-color: #fff;
     overflow: hidden;
@@ -626,14 +603,14 @@
     width: 62px;
     padding-left: 6px;
     border: 0;
-    background-color: #1e9246;
+    background-color: #4C1F59;
     cursor: pointer;
     letter-spacing: 2px;
     overflow: hidden
   }
 
   .sea_submit:hover {
-    color: #ffd736
+    color: #4C1F59;
   }
 
 
@@ -656,7 +633,7 @@
   }
 
   .head_search_hot a.red, .head_search_hot a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   /*hd-main   .intro*/
@@ -675,7 +652,6 @@
     float: left;
     width: 150px;
     height: 46px;
-    background: url(../../static/images/head/webintro-ico.png) 0 -9999px no-repeat;
     overflow: hidden
   }
 
@@ -707,7 +683,7 @@
   }
 
   .hd_nav {
-    background-color: #09c762;
+    background-color: #e09bb7;
     height: 35px
   }
 
@@ -730,7 +706,7 @@
     width: 214px;
     height: 35px;
     color: #fff;
-    background-color: #000;
+    background-color: #4C1F59;
     overflow: hidden
   }
 
@@ -785,7 +761,7 @@
     width: 214px;
     padding: 10px 0;
     overflow: hidden;
-    background-color: #3b3b3b;
+    background-color: #4C1F59;
     border-bottom: 1px solid #ccc;
     box-shadow: -2px 4px 4px rgba(200, 200, 200, 0.3)
   }
@@ -797,6 +773,7 @@
     border: none;
     overflow: hidden;
     font-size: 0;
+
   }
 
   .main_cata li a {
@@ -854,7 +831,7 @@
   }
 
   .main_cata li.current h3 a, .main_cata li.current a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
 
@@ -871,12 +848,12 @@
   }
 
   .J_subCata .J_subView {
-    border: 1px solid #ccc;
+    border: 0px solid #4C1F59;
     width: 600px;
     min-height: 228px;
     padding-top: 5px;
     overflow: hidden;
-    background-color: #eee;
+    background-color: #e09bb7;
     position: relative;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
     padding: 10px;
@@ -909,7 +886,7 @@
 
   .J_subCata .J_subView dd a {
     display: inline-block;
-    color: #09c762;
+    color: #4C1F59;
     padding: 0 8px;
     font-size: 13px;
   }
@@ -940,8 +917,8 @@
   }
 
   .J_subCata .J_subView dd a:hover {
-    color: #09c762;
-    border-color: #09c762
+    color: #4C1F59;
+    border-color: #4C1F59
   }
 
 
@@ -974,7 +951,7 @@
 
   .hd_nav .sub_nav li.current a, .hd_nav .sub_nav li a:hover {
     color: #fff;
-    background-color: #1e9246;
+    background-color: #4C1F59;
     text-decoration: none
   }
 
@@ -994,17 +971,17 @@
   }
 
   .new_header .hd_cart .tit {
-    border-color: #1e9246
+    border-color: #4C1F59
   }
 
   .new_header .hd_cart .tit span {
-    background-color: #1e9246
+    background-color: #4C1F59
   }
 
 
   .hd_cart .tit {
     display: block;
-    width: 168px;
+    width: 180px;
     height: 28px;
     padding-top: 5px;
     position: relative;
@@ -1013,11 +990,11 @@
     border: 1px solid #ccc;
     border-right: 0;
     font-size: 14px;
-    color: #666
+    color: #4C1F59;
   }
 
   .hd_cart .tit b {
-    color: #aaa;
+    color: #4C1F59;
     margin: 0 8px 0 12px;
     font-size: 16px;
     cursor: pointer
@@ -1031,7 +1008,7 @@
     width: 34px;
     height: 28px;
     padding-top: 7px;
-    background-color: #09c762;
+    background-color: #4C1F59;
     text-align: center;
     font-size: 12px;
     color: #fff;
@@ -1058,7 +1035,7 @@
     color: #fff;
     border: 2px solid #fff;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    background-color: #09c762;
+    background-color: #4C1F59;
     border-radius: 10px;
     padding: 0 5px;
     line-height: 16px;
@@ -1102,12 +1079,13 @@
     border-bottom: 1px dashed #d7d7d7;
     padding: 6px 10px;
     height: 17px;
-    overflow: hidden
+    overflow: hidden;
+    color: #4C1F59;
   }
 
   .hd_bar .more-bd .list a:hover {
     background: #f8f8f8;
-    color: #333;
+    color: #4C1F59;
     text-decoration: none
   }
 
@@ -1122,7 +1100,7 @@
     position: absolute;
     right: 0;
     top: 35px;
-    border: 1px solid #09c762;
+    border: 1px solid #4C1F59;
     background-color: #fff;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -1251,11 +1229,11 @@
     border: 0;
     padding: 5px 15px 7px;
     font-size: 14px;
-    background: #09c762;
+    background: #4C1F59;
     color: #fff;
 
     &:hover {
-      background: #1e9246;
+      background: #4C1F59;
     }
   }
 
@@ -1329,7 +1307,7 @@
 
   .hufu-step a.no1:hover, #current-hstep1 a.no1 {
     background-position: -52px -54px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .hufu-step a.no2 {
@@ -1338,7 +1316,7 @@
 
   .hufu-step a.no2:hover, #current-hstep2 a.no2 {
     background-position: -158px -54px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .hufu-step a.no3 {
@@ -1347,7 +1325,7 @@
 
   .hufu-step a.no3:hover, #current-hstep3 a.no3 {
     background-position: -280px -54px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .hufu-step a.no4 {
@@ -1356,7 +1334,7 @@
 
   .hufu-step a.no4:hover, #current-hstep4 a.no4 {
     background-position: -389px -54px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .hufu-step a.no5 {
@@ -1365,7 +1343,7 @@
 
   .hufu-step a.no5:hover, #current-hstep5 a.no5 {
     background-position: -501px -54px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .hufu-step a.no6 {
@@ -1374,7 +1352,7 @@
 
   .hufu-step a.no6:hover, #current-hstep6 a.no6 {
     background-position: -618px -54px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .hufu-step a.no7 {
@@ -1383,7 +1361,7 @@
 
   .hufu-step a.no7:hover, #current-hstep7 a.no7 {
     background-position: -738px -54px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .hufu-step a.no8 {
@@ -1393,7 +1371,7 @@
 
   .hufu-step a.no8:hover, #current-hstep8 a.no8 {
     background-position: -842px -54px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step {
@@ -1407,7 +1385,7 @@
 
   .caiz-step a.no1:hover, #current-cstep1 a.no1 {
     background-position: -52px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no2 {
@@ -1416,7 +1394,7 @@
 
   .caiz-step a.no2:hover, #current-cstep2 a.no2 {
     background-position: -140px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no3 {
@@ -1425,7 +1403,7 @@
 
   .caiz-step a.no3:hover, #current-cstep3 a.no3 {
     background-position: -232px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no4 {
@@ -1434,7 +1412,7 @@
 
   .caiz-step a.no4:hover, #current-cstep4 a.no4 {
     background-position: -316px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no5 {
@@ -1443,7 +1421,7 @@
 
   .caiz-step a.no5:hover, #current-cstep5 a.no5 {
     background-position: -408px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no6 {
@@ -1452,7 +1430,7 @@
 
   .caiz-step a.no6:hover, #current-cstep6 a.no6 {
     background-position: -494px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no7 {
@@ -1461,7 +1439,7 @@
 
   .caiz-step a.no7:hover, #current-cstep7 a.no7 {
     background-position: -579px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no8 {
@@ -1470,7 +1448,7 @@
 
   .caiz-step a.no8:hover, #current-cstep8 a.no8 {
     background-position: -674px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no9 {
@@ -1479,7 +1457,7 @@
 
   .caiz-step a.no9:hover, #current-cstep9 a.no9 {
     background-position: -756px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .caiz-step a.no10 {
@@ -1489,7 +1467,7 @@
 
   .caiz-step a.no10:hover, #current-cstep10 a.no10 {
     background-position: -846px -162px;
-    color: #09c762
+    color: #4C1F59
   }
 
   .cate-menu {
@@ -1557,7 +1535,7 @@
   }
 
   .cate-menu dd.current a, .cate-menu dd.current a:hover {
-    color: #09c762;
+    color: #4C1F59;
     background-color: #f1f1f1
   }
 
@@ -1616,7 +1594,7 @@
   }
 
   .fixed-want dd a.red {
-    color: #09c762;
+    color: #4C1F59;
     background-color: #ffecf2;
     border-radius: 3px
   }
@@ -1671,7 +1649,7 @@
     margin-right: 8px;
     background-position: right -245px;
     box-shadow: 0 1px 1px #eee;
-    color: #09c762
+    color: #4C1F59
   }
 
   .search-selected a.item:hover {
@@ -1729,7 +1707,7 @@
   }
 
   .search-options dd .items a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .search-options dd .link {
@@ -1752,7 +1730,7 @@
     padding: 0 20px 0 0;
     background-position: 30px -381px;
     display: none;
-    color: #09c762
+    color: #4C1F59
   }
 
   .search-options dd a.more-btn.clicked {
@@ -1884,7 +1862,7 @@
     padding: 4px 26px 4px 15px;
     background-position: right -104px;
     background-position: right -102px;
-    color: #09c762;
+    color: #4C1F59;
     text-shadow: 1px 1px 1px #fff
   }
 
@@ -1893,7 +1871,7 @@
     padding: 4px 26px 4px 15px;
     background-position: right -330px;
     background-position: right -328px;
-    color: #09c762;
+    color: #4C1F59;
     text-shadow: 1px 1px 1px #fff
   }
 
@@ -1926,7 +1904,7 @@
   }
 
   .search_num b {
-    color: #09c762
+    color: #4C1F59
   }
 
   .search_num span.search_btn {
@@ -1950,7 +1928,7 @@
     border-color: #ccc;
     box-shadow: 0 1px 1px #eee;
     text-decoration: none;
-    color: #09c762
+    color: #4C1F59
   }
 
   .search_num span.search_btn span {
@@ -1958,7 +1936,7 @@
   }
 
   .search_num span.search_btn span em {
-    color: #09c762
+    color: #4C1F59
   }
 
   .productlist {
@@ -2029,7 +2007,7 @@
   }
 
   .cms-box .bd a:hover span.name {
-    color: #09c762
+    color: #4C1F59
   }
 
   .baokuan-goods a, .baokuan-goods a span {
@@ -2037,7 +2015,7 @@
   }
 
   .baokuan-goods a span.price {
-    color: #09c762
+    color: #4C1F59
   }
 
   .baokuan-goods a.no1 {
@@ -2228,7 +2206,7 @@
   }
 
   .week-hot .price {
-    color: #09c762
+    color: #4C1F59
   }
 
   .week-hot .price em {
@@ -2282,7 +2260,7 @@
 
   .seemore_items h3 a:hover {
     text-decoration: none;
-    color: #09c762
+    color: #4C1F59
   }
 
   .seemore_items .bd {
@@ -2327,5 +2305,5 @@
     text-align: right;
     cursor: pointer;
   }
-
 </style>
+

@@ -71,7 +71,7 @@
                 <tr>
                   <td>&nbsp;</td>
                   <td>
-                    <font color="red">Hints：</font><br>
+                    <font color="#e09bb7">Hints：</font><br>
                     You can upload files in the following format：<br>gif、jpg、png、word、excel、txt、zip、ppt、pdf
                   </td>
                 </tr>
@@ -173,7 +173,7 @@
   }
 
   .my_nala_centre .trade_mod .h301 a.more:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .something_interesting {
@@ -197,7 +197,7 @@
   .my_nala_centre .something_interesting em {
     font-size: 12px;
     font-weight: bold;
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .relate_goods {
@@ -264,11 +264,11 @@
     height: 24px;
     line-height: 25px;
     _line-height: 18px;
-    border: 1px solid #1e9246;
+    border: 1px solid #4C1F59;
     border-radius: 3px;
     font-size: 100%;
     color: #fff;
-    background-color: #09c762;
+    background-color: #4C1F59;
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer;

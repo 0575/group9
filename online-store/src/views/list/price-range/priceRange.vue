@@ -120,7 +120,7 @@
   }
 
   .search-options dd .items a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .search-options dd .link {
@@ -143,7 +143,7 @@
     padding: 0 20px 0 0;
     background-position: 30px -381px;
     display: none;
-    color: #09c762
+    color: #4C1F59
   }
 
   .search-options dd a.more-btn.clicked {
@@ -177,7 +177,6 @@
   .priceform {
     position: absolute;
     top: -11px;
-    left: 500px;
     z-index: 10
   }
 
@@ -288,7 +287,7 @@
     padding: 4px 26px 4px 15px;
     background-position: right -104px;
   + background-position: right - 102 px;
-    color: #09c762;
+    color: #4C1F59;
     text-shadow: 1px 1px 1px #fff
   }
 
@@ -297,7 +296,7 @@
     padding: 4px 26px 4px 15px;
     background-position: right -330px;
   + background-position: right - 328 px;
-    color: #09c762;
+    color: #4C1F59;
     text-shadow: 1px 1px 1px #fff
   }
 

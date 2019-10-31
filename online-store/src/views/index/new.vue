@@ -2,11 +2,11 @@
   <div>
     <div class="w-max ct bgwh mb30 ovh border-eee">
       <div class="newopro-l fl">
-        <a href=""><img src="../../static/images/new/xinpin.jpg" width="224" height="478"></a>
+        <a href=""><img src="../../static/images/new/new.jpg" width="224" height="478"></a>
       </div>
       <div class="newopro-r fr">
         <h2 class="index-tt">
-          <em class="ft18 c000">New Items</em>
+          <em class="ft18 c000">New Arrivals</em>
           <router-link to="/app/home/list/more" target=_blank><a class="fr c666">More&gt;&gt;</a></router-link>
         </h2>
         <ul class="newgoods_fastbuy">
@@ -24,7 +24,6 @@
               <p><em class="c333"></em>{{item.goods_brief}}</p>
               <div>
                 <span class="p-price"><em class="fastbuy_price">${{item.shop_price}}</em><del>Original:${{item.market_price}}</del></span>
-                <a href="" class="p-buy fr ibg">Buy Now</a>
                 <span class="p-time fr">{{item.sold_num}} Sold</span>
               </div>
             </div>
@@ -212,7 +211,7 @@
   }
 
   .c000 {
-    color: #000;
+    color: #4C1F59;
   }
 
   .c333 {
@@ -280,7 +279,7 @@
   }
 
   .p-price {
-    color: #f40;
+    color: #e09bb7;
   }
 
   .p-price i {

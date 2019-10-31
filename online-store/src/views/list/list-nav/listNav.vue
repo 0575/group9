@@ -162,7 +162,7 @@
   }
 
   a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   a:focus, area:focus {
@@ -170,7 +170,7 @@
   }
 
   ::selection {
-    background: #09c762;
+    background: #4C1F59;
     color: #fff
   }
 
@@ -270,7 +270,7 @@
   }
 
   .cate-menu dd.current a, .cate-menu dd.current a:hover {
-    color: #09c762;
+    color: #4C1F59;
     background-color: #f1f1f1
   }
 

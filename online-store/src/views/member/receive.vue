@@ -9,15 +9,30 @@
             <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd"
                    v-for="(item, index) in receiveInfoArr">
               <tbody>
+
               <tr>
-                <td align="right" bgcolor="#ffffff">Delivery Area：</td>
-                <td colspan="3" align="left" bgcolor="#ffffff">
-                  <div class="addr" @click="bubble(index)">
-                    <v-distpicker :province="item.province" :city="item.city" :area="item.district"
-                                  @province="updateProvince" @city="updateCity" @area="updateArea"></v-distpicker>
-                  </div>
-                </td>
+                <td align="right" bgcolor="#ffffff">State：</td>
+                <td align="left" bgcolor="#ffffff"><input name="state" type="text" class="inputBg" id="state_0"
+                                                          v-model="item.province">
+                  <span :class="{error:item.province==''}">(Required)</span></td>
               </tr>
+
+              <tr>
+                <td align="right" bgcolor="#ffffff">City：</td>
+                <td align="left" bgcolor="#ffffff"><input name="city" type="text" class="inputBg" id="city_0"
+                                                          v-model="item.city">
+                  <span :class="{error:item.city==''}">(Required)</span></td>
+              </tr>
+
+              <tr>
+                <td align="right" bgcolor="#ffffff">Suburb：</td>
+                <td align="left" bgcolor="#ffffff"><input name="suburb" type="text" class="inputBg" id="suburb_0"
+                                                          v-model="item.district">
+                  <span :class="{error:item.district==''}">(Required)</span></td>
+              </tr>
+
+
+
               <tr>
                 <td align="right" bgcolor="#ffffff">Name：</td>
                 <td align="left" bgcolor="#ffffff"><input name="consignee" type="text" class="inputBg" id="consignee_0"
@@ -37,7 +52,7 @@
                 <td align="right" bgcolor="#ffffff">Mobile：</td>
                 <td align="left" bgcolor="#ffffff"><input name="mobile" type="text" class="inputBg" id="mobile_0"
                                                           v-model="item.signer_mobile"><span
-                  :class="{error:item.signer_mobile==''}">(Required)</span></td>
+                  :class="{error:item.signer_mobile==''}"> (Required)</span></td>
               </tr>
               <tr>
                 <td align="right" bgcolor="#ffffff">&nbsp;</td>
@@ -54,16 +69,36 @@
 
             <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
               <tbody>
-              <tr>
+              <!--tr>
                 <td align="right" bgcolor="#ffffff">Delivery Area：</td>
                 <td colspan="3" align="left" bgcolor="#ffffff">
                   <div class="addr">
-                    <!-- <v-distpicker :placeholder="newInfo.dist" @province="getProvince" @city="getCity" @selected="getArea"></v-distpicker> -->
                     <v-distpicker :province="newInfo.province" :city="newInfo.city" :area="newInfo.district"
                                   @province="getProvince" @city="getCity" @area="getArea"></v-distpicker>
                   </div>
                 </td>
+              </tr>-->
+              <tr>
+                <td align="right" bgcolor="#ffffff">State：</td>
+                <td align="left" bgcolor="#ffffff"><input name="state" type="text" class="inputBg" id="state_0"
+                                                          v-model="newInfo.province">
+                  <span :class="{error:newInfo.province==''}">(Required)</span></td>
               </tr>
+
+              <tr>
+                <td align="right" bgcolor="#ffffff">City：</td>
+                <td align="left" bgcolor="#ffffff"><input name="city" type="text" class="inputBg" id="city_0"
+                                                          v-model="newInfo.city">
+                  <span :class="{error:newInfo.city==''}">(Required)</span></td>
+              </tr>
+
+              <tr>
+                <td align="right" bgcolor="#ffffff">Suburb：</td>
+                <td align="left" bgcolor="#ffffff"><input name="suburb" type="text" class="inputBg" id="suburb_0"
+                                                          v-model="newInfo.district">
+                  <span :class="{error:newInfo.district==''}">(Required)</span></td>
+              </tr>
+
               <tr>
                 <td align="right" bgcolor="#ffffff">Name：</td>
                 <td align="left" bgcolor="#ffffff"><input name="consignee" type="text" class="inputBg" id="consignee_0"
@@ -82,7 +117,7 @@
                 <td align="right" bgcolor="#ffffff">Mobile：</td>
                 <td align="left" bgcolor="#ffffff"><input name="mobile" type="text" class="inputBg" id="mobile_0"
                                                           v-model="newInfo.signer_mobile"><span
-                  :class="{error:newInfo.signer_mobile==''}">(Required)</span></td>
+                  :class="{error:newInfo.signer_mobile==''}"> (Required)</span></td>
               </tr>
               <tr>
                 <td align="right" bgcolor="#ffffff">&nbsp;</td>
@@ -207,7 +242,7 @@
 </script>
 <style scoped>
   .error {
-    color: #fa8341;
+    color: #e09bb7;
   }
 
   table {
@@ -250,7 +285,7 @@
   }
 
   .my_nala_centre .trade_mod .h301 a.more:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .something_interesting {
@@ -274,7 +309,7 @@
   .my_nala_centre .something_interesting em {
     font-size: 12px;
     font-weight: bold;
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .relate_goods {
@@ -342,11 +377,11 @@
     height: 24px;
     line-height: 16px;
     _line-height: 18px;
-    border: 1px solid #1e9246;
+    border: 1px solid #4C1F59;
     border-radius: 3px;
     font-size: 100%;
     color: #fff;
-    background-color: #09c762;
+    background-color: #4C1F59;
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer

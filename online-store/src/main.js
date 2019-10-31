@@ -2,8 +2,13 @@
 
 //global vue
 import Vue from 'vue';
+//import BootstrapVue from 'bootstrap-vue';
+//Vue.use(BootstrapVue)
 //global css
+//import './styles/bootstrap/css/bootstrap.min.css';
 import './styles/common.scss';
+//import './styles/style.css';
+
 //global font style
 import './styles/fonts/iconfont.css';
 //global router
@@ -24,7 +29,7 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  components: {App}
+  components: {App},
 })
 
 

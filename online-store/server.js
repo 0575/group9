@@ -8,14 +8,14 @@ var app = express();
 var compiler = webpack(webpackConfig);
 
 app.use(webpackDevMiddleware(compiler, {
-	publicPath: 'http://localhost:3000/',
-	index: 'index.html'
+  publicPath: 'http://localhost:3000/',
+  index: 'index.html'
 }))
 
 app.use(webpackHotMiddleware(compiler, {
-    log: console.log
+  log: console.log
 }))
 
-app.listen(3000, function() {
-	console.log("listening on port 3000");
+app.listen(3000, function () {
+  console.log("listening on port 3000");
 })

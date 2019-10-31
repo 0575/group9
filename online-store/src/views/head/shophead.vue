@@ -18,9 +18,9 @@
 
           </div>
           <ul class="hd-step">
-            <li class="first on"><em>1</em>My shopping cart<i></i></li>
+            <li class="first on"><em>1</em>Shopping Cart<i></i></li>
             <li class="jt">&nbsp;</li>
-            <li class="on"><em>2</em>Confirm Order Information<i></i></li>
+            <li class="on"><em>2</em>Confirm Order<i></i></li>
             <li class="jt">&nbsp;</li>
             <li><em>3</em>Payment<i></i></li>
           </ul>
@@ -141,7 +141,7 @@
 
   .hd-step li {
     float: left;
-    width: 116px;
+    #width: 116px;
     height: 28px;
     color: #bbb;
     background: url(../../static/images/loginHead/page-step-bg.png) 0 0 no-repeat;

@@ -162,7 +162,7 @@
   }
 
   a:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   a:focus, area:focus {
@@ -170,7 +170,7 @@
   }
 
   ::selection {
-    background: #09c762;
+    background: #4C1F59;
     color: #fff
   }
 
@@ -207,7 +207,7 @@
   }
 
   a.productitem span.nalaprice {
-    color: #09c762;
+    color: #4C1F59;
     font-size: 14px;
     display: block
   }
@@ -233,7 +233,7 @@
   }
 
   a.productitem span.sales {
-    color: #09c762;
+    color: #4C1F59;
     padding: 0 2px
   }
 
@@ -248,7 +248,7 @@
 
   a.productitem:hover {
     text-decoration: none;
-    border-color: #09c762
+    border-color: #4C1F59
   }
 
   .productlist {

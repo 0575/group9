@@ -3,40 +3,28 @@
     <div class="c-box bg-box" >
       <div class="login-box clearfix"style="margin-top:10px">
         <div class="fr form-box">
-          <h2>帐号登录</h2>
+          <h2>Login</h2>
           <form id="jsLoginForm" autocomplete="off">
 
             <input type="hidden" name="csrfmiddlewaretoken" value="ywSlOHdiGsK6VFB6iyhnB1B30khmz8SU">
 
             <div class="form-group marb20">
-              <label>用&nbsp;户&nbsp;名</label>
-              <input name="account_l" id="account_l" type="text" v-model="userName" @focus="errorUnshow" placeholder="手机号/账号">
+              <label>Username</label>
+              <input name="account_l" id="account_l" type="text" v-model="userName" @focus="errorUnshow" placeholder="Please enter the username">
             </div>
              <p class="error-text" v-show="userNameError">{{userNameError}}</p>
             <div class="form-group marb8">
-              <label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>
-              <input name="password_l" id="password_l" type="password" v-model="parseWord" @focus="errorUnshow" placeholder="请输入您的密码">
+              <label>Password</label>
+              <input name="password_l" id="password_l" type="password" v-model="parseWord" @focus="errorUnshow" placeholder="Please enter the password">
             </div>
             <p class="error-text" v-show="parseWordError">{{parseWordError}}</p>
-     <!--        <div class="error btns login-form-tips" id="jsLoginTips" v-show="error"><p>用户名或密码错误</p></div> -->
             <div class="auto-box marb38">
             </div>
             <p class="error-text" v-show="error">{{error}}</p>
-            <input class="btn btn-green" id="jsLoginBtn" type="button" @click = "login" value="立即登录 &gt; ">
+            <input class="btn btn-green" id="jsLoginBtn" type="button" @click = "login" value="Login &gt; ">
           </form>
-          <ul class="form other-form">
-            <li>
-              <h5>使用第三方帐号登录</h5>
-            </li>
-            <li class="other-login">
-              <a class="qq" href="http://shop.projectsedu.com:8001/login/qq/"></a>
-              <a class="sina" href="http://shop.projectsedu.com:8001/login/weibo/"></a>
-              <a class="weixin" href="http://shop.projectsedu.com:8001/login/weixin/"></a>
-            </li>
-          </ul>
           <p class="form-p">
-            没有帐号？
-            <router-link :to="'/app/register/'" target = _blank>[立即注册]</router-link>
+            <router-link :to="'/app/register/'" target = _blank>[Register Now]</router-link>
           </p>
         </div>
 
@@ -45,9 +33,10 @@
   </div>
 </template>
 <script>
-  import cookie from '../../static/js/cookie';
-  import { login } from '../../api/api'
-  export default {
+    import cookie from '../../static/js/cookie';
+    import {login} from '../../api/api'
+
+    export default {
     data(){
       return {
         userName:'',
@@ -60,23 +49,16 @@
     },
     methods:{
       login(){
-        // if(this.userName==''||this.parseWord==''){
-        //   this.error = true;
-        //   return
-        // }
         var that = this;
       login({
-          username:this.userName, //当前页码
+          username:this.userName,
           password:this.parseWord
       }).then((response)=> {
             console.log(response);
-            //本地存储用户信息
             cookie.setCookie('name',this.userName,7);
             cookie.setCookie('token',response.data.token,7)
-            //存储在store
-            // 更新store数据
+
             that.$store.dispatch('setInfo');
-            //跳转到首页页面
             this.$router.push({ name: 'index'})
           })
           .catch(function (error) {
@@ -90,47 +72,21 @@
               that.parseWordError = error.password[0];
             }
           });
-
-        //      this.$http.post('/login', {
-        //   params: {
-        //     userName:this.userName,
-        //     parseWord:this.parseWord,
-        //   }
-        // })
-        //   .then((response)=> {
-        //     console.log(response);
-        //     //本地存储用户信息
-        //     cookie.setCookie('name',response.data.info.name,7);
-        //     cookie.setCookie('id',response.data.info.id,7)
-        //     //存储在store
-        //     // 更新store数据
-        //     this.$store.dispatch('setInfo');
-
-        //     //跳转到首页页面
-        //     this.$router.push({ name: 'index'})
-
-        //   })
-        //   .catch(function (error) {
-        //     console.log(error);
-        //   });
       },
       errorUnshow(){
         this.error = false;
       }
     },
     created(){
-      //清除缓存
       cookie.delCookie('token');
       cookie.delCookie('name');
-      //重新触发store
-      //更新store数据
       this.$store.dispatch('setInfo');
     }
   }
 </script>
 <style  scoped>
   .error-text{
-    color:#fa8341;
+    color:#e09bb7;
   }
   .other-form li {
     padding-bottom: 8px;
@@ -139,32 +95,8 @@
   .other-form li h5 {
     font-size:12px;
   }
-
-  .other-login a {
-    margin-top: 0;
-    vertical-align: top;
-    margin-right: 10px;
-    background: url(../../static/images/login/other-login-bg.png) center no-repeat;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-  }
-  .other-login a.qq {
-    background-position: -40px 0;
-  }
-  .other-login a.sina {
-    background-position: 0 0;
-  }
-  .other-login a.alipay {
-    background-position: -80px 0;
-  }
-  .other-login a.weixin {
-    background-position: -200px 0;
-  }
   .c-box{
     width:100%;
-    min-width: 1190px;
     overflow:hidden;
   }
   .bg-box{
@@ -190,7 +122,6 @@
     margin-bottom:15px;
     padding-top:32px;
     padding-left:190px;
-    /*  background:url(../../static/images/login/logo.png) no-repeat 0 center;*/
   }
   .index-logo{
     position:absolute;
@@ -208,7 +139,6 @@
     margin-top:48px;
     padding-left:20px;
     color:#fff;
-    /*background:url(../../static/images/login/homepage.png) no-repeat 0 top;*/
   }
   .fl{float:left!important;}
   .fr{float:right!important;}
@@ -248,28 +178,6 @@
   .imgslide .dots li.active{
     background:#6ec559;
     color:#6ec559;
-  }
-  .unslider-arrow {
-    position: absolute;
-    width:33px;
-    height:50px;
-    top: 45%;
-    cursor: pointer;
-    z-index:100;
-  }
-  .unslider-arrow.prev {
-    left: 0;
-    background:url(../../static/images/login/slide_l.png) no-repeat center center;
-  }
-  .unslider-arrow.prev:hover {
-    background:url(../../static/images/login/slide_l_1.png) no-repeat center center;
-  }
-  .unslider-arrow.next{
-    right:0;
-    background:url(../../static/images/login/slide_r.png) no-repeat center center;
-  }
-  .unslider-arrow.next:hover{
-    background:url(../../static/images/login/slide_r_1.png) no-repeat center center;
   }
   .hd-login > h1{
     float:left;
@@ -328,7 +236,7 @@
     text-align:center;
   }
   .form-box > .tab > h2.active{
-    border-bottom:3px solid #6ec55a;
+    border-bottom:3px solid #4C1F59;
     color:#333;
   }
 
@@ -405,10 +313,11 @@
     cursor:pointer;
   }
   .btn-green{
-    background:#6ec55a;
+    background:#FDDEE3;
+    color: #000;
   }
   .btn-green:hover{
-    background:#5dbf45;
+    background:#e09bb7;
   }
   .form-p{
     position:absolute;
@@ -416,7 +325,7 @@
     bottom:25px;
   }
   .form-p > a{
-    color:#fa8341;
+    color:#e09bb7;
   }
   .form-p > a:hover{
     color:#666;

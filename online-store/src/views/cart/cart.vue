@@ -152,15 +152,16 @@
                 this.totalPrice = totalPrice;
             },
             deleteGoods(index, id) { //remove from cart
-                alert('Are you sure you want to remove this item from your shopping cart?');
-                deleteShopCart(id).then((response) => {
-                    console.log(response.data);
-                    this.goods.goods_list.splice(index, 1);
-                    this.$store.dispatch('setShopList');
+                if (confirm('Are you sure you want to remove this item from your shopping cart?')){
+                    deleteShopCart(id).then((response) => {
+                        console.log(response.data);
+                        this.goods.goods_list.splice(index, 1);
+                        this.$store.dispatch('setShopList');
 
-                }).catch(function (error) {
-                    console.log(error);
-                });
+                    }).catch(function (error) {
+                        console.log(error);
+                    });
+                }else{}
             },
             reduceCartNum(index, id) { //reduce cart number
                 if (this.goods.goods_list[index].nums <= 1) {
@@ -253,7 +254,7 @@
   }
 
   .addressActive, .payWrapActive {
-    border: 1px solid red !important;
+    border: 2px solid #4C1F59 !important;
   }
 
   .payWrap {
@@ -337,7 +338,7 @@
 
   .top-next .fr span.red {
     margin-right: 0;
-    color: #09c762
+    color: #4C1F59
   }
 
   .cart-box .hd {
@@ -427,7 +428,7 @@
 
   .goods-list li .name i {
     background-color: #fff2f2;
-    color: #09c762;
+    color: #4C1F59;
     padding: 0 2px;
     border-radius: 2px
   }
@@ -537,7 +538,7 @@
 
   .goods-list li .price-xj cite {
     font-size: 14px;
-    color: #09c762;
+    color: #4C1F59;
     margin: 0 3px
   }
 
@@ -696,11 +697,11 @@
     height: 16px;
     line-height: 16px;
     _line-height: 18px;
-    border: 1px solid #1e9246;
+    border: 1px solid #4C1F59;
     border-radius: 3px;
     font-size: 100%;
     color: #fff;
-    background-color: #09c762;
+    background-color: #4C1F59;
     overflow: hidden;
     vertical-align: middle
   }
@@ -708,7 +709,7 @@
   .btn:hover, .btn-css3:hover {
     text-decoration: none;
     color: #fff;
-    background: #1e9246
+    background: #4C1F59
   }
 
   .btn img, .btn-css3 img {

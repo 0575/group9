@@ -142,7 +142,7 @@
 
   a:hover {
     text-decoration: underline;
-    color: #09c762
+    color: #4C1F59
   }
 
   a:focus, area:focus {
@@ -150,7 +150,7 @@
   }
 
   ::selection {
-    background: #09c762;
+    background: #4C1F59;
     color: #fff
   }
 
@@ -163,7 +163,7 @@
   }
 
   .red, a.red, a.red:hover, .pink, a.pink, a.pink:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .gray999, .gray, a.gray, a.gray:hover {
@@ -225,7 +225,7 @@
   }
 
   .my_nala_centre .trade_mod .h301 a.more:hover {
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .something_interesting {
@@ -249,7 +249,7 @@
   .my_nala_centre .something_interesting em {
     font-size: 12px;
     font-weight: bold;
-    color: #09c762
+    color: #4C1F59
   }
 
   .my_nala_centre .relate_goods {

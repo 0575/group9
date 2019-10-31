@@ -49,7 +49,7 @@
                   class="timedown" id="timedown"></span>
                 </li>
                 <li>
-                  <span class="lbl">Sales</span><span>Recently sold<em
+                  <span>Recently sold<em
                   class="red">{{proDetail.sold_num}}</em> Items</span></li>
               </ul>
             </dd>
@@ -287,12 +287,12 @@
   }
 
   .tabs_bar ul li a em {
-    color: #09c762;
+    color: #4C1F59;
     font-weight: bold
   }
 
   .tabs_bar li.tab-buy {
-    color: #09c762;
+    color: #4C1F59;
     float: right;
     padding-right: 94px;
     position: relative;
@@ -315,11 +315,11 @@
     height: 23px;
     line-height: 22px;
     padding: 5px 12px;
-    background: #09c762
+    background: #4C1F59
   }
 
   .tabs_bar li.tab-buy a.btn:hover {
-    background: #1e9246
+    background: #4C1F59
   }
 
   .tabs_bar li.tab-buy a.graybtn {
@@ -437,13 +437,6 @@
     line-height: 24px
   }
 
-  /*.spxq_main .nala_say {*/
-  /*line-height:28px;*/
-  /*background:url(images/nalasay-bg.jpg) 0 0 no-repeat;*/
-  /*padding:0 20px 0 140px;*/
-  /*min-height:110px;*/
-  /*+height:110px*/
-  /*}*/
   .spxq_main img {
     display: block;
     margin: 0 auto
@@ -452,7 +445,7 @@
   .spxq_main .spxq_top {
     margin: 25px 0 0;
     font-size: 16px;
-    color: #09c762;
+    color: #4C1F59;
     font-weight: bold
   }
 
@@ -488,8 +481,8 @@
   .spxq_main h3 {
     font-size: 20px;
     margin: 20px 0 10px;
-    color: #09c762;
-    border-bottom: 1px solid #09c762;
+    color: #4C1F59;
+    border-bottom: 1px solid #4C1F59;
     padding-bottom: 5px
   }
 
@@ -531,7 +524,7 @@
   }
 
   .z-detail-point-box-right div font {
-    color: #09c762;
+    color: #4C1F59;
   }
 
   .z-detail-point-box-right div a.go_btn {
@@ -546,7 +539,7 @@
   }
 
   .z-detail-point-box-right div a.good_com {
-    color: #09c762;
+    color: #4C1F59;
     margin-right: 5px
   }
 
@@ -685,7 +678,7 @@
   }
 
   .item-thumbs li.current {
-    border-color: #09c762
+    border-color: #4C1F59
   }
 
   .item-thumbs .bd {
@@ -730,7 +723,7 @@
     position: absolute;
 
     top: 0;
-    color: #09c762
+    color: #4C1F59
   }
 
   .item-thumbs a.left_btn, .item-thumbs a.right_btn {
@@ -817,7 +810,7 @@
 
   .item-info dd .lbl {
     display: inline-block;
-    width: 52px;
+    width: 80px;
     color: #666
   }
 
@@ -828,7 +821,7 @@
   }
 
   .item-info dd li .icon_promo, .item-info dd li span.t_ico {
-    background-color: #09c762;
+    background-color: #4C1F59;
     color: #fff;
     display: inline-block;
     height: 20px;
@@ -892,7 +885,7 @@
   }
 
   .item-info dd li em.red a {
-    color: #09c762
+    color: #4C1F59
   }
 
   .item-info .property .unit {
@@ -909,7 +902,7 @@
   }
 
   .item-info .property .unit em.red {
-    color: #09c762;
+    color: #4C1F59;
     margin: 0
   }
 
@@ -1025,11 +1018,11 @@
     height: 16px;
     line-height: 16px;
     _line-height: 18px;
-    border: 1px solid #1e9246;
+    border: 1px solid #4C1F59;
     border-radius: 3px;
     font-size: 100%;
     color: #fff;
-    background-color: #09c762;
+    background-color: #4C1F59;
     overflow: hidden;
     vertical-align: middle
   }
@@ -1037,7 +1030,7 @@
   .btn:hover, .btn-css3:hover {
     text-decoration: none;
     color: #fff;
-    background: #1e9246
+    background: #4C1F59
   }
 
   .btn img, .btn-css3 img {
